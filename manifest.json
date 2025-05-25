@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "read-instead",
+  "description": "Block distractions and push yourself to learn with savage motivation.",
+  "version": "1.0",
+  "permissions": ["tabs", "storage", "alarms"],
+  "host_permissions": [
+    "https://*.instagram.com/*",
+    "https://*.facebook.com/*",
+    "https://*.x.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
